@@ -1,25 +1,4 @@
-#########################################################################
-###               The perfect Varnish 4.x+ configuration              ###
-### for WordPress, Joomla, Drupal & other (common) CMS based websites ###
-#########################################################################
 
-######################
-#
-# UPDATED on December 15th, 2021
-#
-# Configuration Notes:
-# 1. Default dynamic content caching respects your backend's cache-control HTTP header.
-#    If however you need to enforce a different cache-control TTL,
-#    do a search for "180" and replace with the new value in seconds.
-#    Stale cache is served for up to 24 hours.
-# 2. Make sure you update the "backend default { ... }" section with the correct IP and port
-#
-######################
-
-# Varnish Reference:
-# See the VCL chapters in the User-Guide at https://varnish-cache.org/docs/
-
-# Marker to tell the VCL compiler that this VCL has been adapted to the new 4.1 format
 vcl 4.1;
 
 # Imports
