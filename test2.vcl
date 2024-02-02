@@ -12,7 +12,7 @@ backend default {
 backend cleaneats {
   .host = "135.148.94.242";
   .port = "80";
-  .host_header = "www.cleaneatsmealprep.com";
+  .host_header = "testing.beastcoastnutrition.com";
 }
 
 sub vcl_recv {
